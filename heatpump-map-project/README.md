@@ -1,19 +1,7 @@
 # Heat Pump Map Project
 
-This project visualizes heat pump locations and their coefficients of performance (COP) on a map. It fetches data from a heat pump monitoring service and displays it using a mapping library.
+This project visualizes heat pump locations and their coefficients of performance (COP) on a map. It fetches data from heatpumpmointor.org and displays it using the folium library.
 
-## Project Structure
-
-```
-heatpump-map-project
-├── src
-│   ├── heatpumpmap.py       # Fetches and processes heat pump data
-│   ├── plot_map.py          # Plots heat pump locations on a map
-│   └── utils
-│       └── __init__.py      # Contains utility functions for data processing
-├── requirements.txt          # Lists project dependencies
-└── README.md                 # Project documentation
-```
 
 ## Setup Instructions
 

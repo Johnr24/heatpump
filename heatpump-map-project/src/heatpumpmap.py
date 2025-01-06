@@ -4,7 +4,7 @@ from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 import time
 
 # Range of system IDs to process
-system_id_range = range(1, 50)
+system_id_range = range(1, 550)
 
 # Initialize geolocator
 geolocator = Nominatim(user_agent="heatpumpmap", timeout=10)
