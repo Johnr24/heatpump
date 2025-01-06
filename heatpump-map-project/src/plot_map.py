@@ -1,4 +1,5 @@
 import folium
+import csv
 from heatpumpmap import systems  # Assuming systems is a list of dictionaries with heat pump data
 import matplotlib.colors as mcolors
 from geopy.geocoders import Nominatim
@@ -19,7 +20,21 @@ def get_color(cop, min_cop, max_cop):
     cmap = mcolors.LinearSegmentedColormap.from_list("cop_cmap", ["red", "orange", "green"])
     return mcolors.to_hex(cmap(norm(cop)))
 
+def read_overridden_locations(csv_file):
+    overridden_locations = {}
+    try:
+        with open(csv_file, mode='r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                overridden_locations[row['id']] = row['location']
+    except FileNotFoundError:
+        pass
+    return overridden_locations
+
 def plot_heatpump_map(systems):
+    # Read overridden locations
+    overridden_locations = read_overridden_locations('overridden_locations.csv')
+
     # Create a map centered around a central point
     map_center = [51.509865, -0.118092]  # Example: London coordinates
     heatmap = folium.Map(location=map_center, zoom_start=6)
@@ -32,7 +47,8 @@ def plot_heatpump_map(systems):
     # Add markers for each system
     for system in systems:
         if 'location' in system and 'running_cop' in system['stats']:
-            location_str = system['location']
+            system_id = str(system['id'])
+            location_str = overridden_locations.get(system_id, system['location'])
             cop = system['stats']['running_cop']
             if cop is not None:
                 # Geocode the location
