@@ -1,5 +1,6 @@
 import requests
 import csv
+import pandas as pd
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 import time
@@ -59,7 +60,7 @@ for system in meta:
             # Geocode location with retry logic
             location = None
             print(f"Geocoding location for system ID {system_id}: {location_str}")
-            for attempt in range(1):  # Retry up to 3 times
+            for attempt in range(3):  # Retry up to 3 times
                 location = geocode_location(location_str)
                 if location:
                     print(f"Geocoding successful for system ID {system_id} on attempt {attempt + 1}")
@@ -82,6 +83,12 @@ for system in meta:
 
 # Write updated cached locations to CSV
 write_cached_locations('cached_locations.csv', cached_locations)
+
+# Convert systems data to DataFrame
+df = pd.json_normalize(systems)
+
+# Save to CSV
+df.to_csv('heatpump_systems.csv', index=False)
 
 # Print systems data for debugging
 for system in systems:
