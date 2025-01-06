@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload only the heatpump_map.html file
-          path: 'heatpump-map-project/heatpump_map.html'
+          path: 'heatpump-map-project/html/heatpump_map.html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
