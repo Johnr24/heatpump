@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55c9165574a455858c2ba8706db25472 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55c9165574a455858c2ba8706db25472" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55c9165574a455858c2ba8706db25472 = L.map(
+                "map_55c9165574a455858c2ba8706db25472",
+                {
+                    center: [51.509865, -0.118092],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2482c8f092e8f737ff711124896ca3e3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2482c8f092e8f737ff711124896ca3e3.addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var marker_fdedb58ae6dab4ff8bd9b19b08d84a96 = L.marker(
+                [53.785097, -1.099040720243205],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_a7365726d2ecab45a2c698f4a44a7f42 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.76\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_fdedb58ae6dab4ff8bd9b19b08d84a96.setIcon(div_icon_a7365726d2ecab45a2c698f4a44a7f42);
+        
+    
+        var popup_ea890cd8b3b36678ca463b0330686d2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2445caae26eba6bf1605f7309e446ce4 = $(`<div id="html_2445caae26eba6bf1605f7309e446ce4" style="width: 100.0%; height: 100.0%;">ID: 1<br>Model: Mitsubishi Ecodan<br>COP: 3.76</div>`)[0];
+                popup_ea890cd8b3b36678ca463b0330686d2f.setContent(html_2445caae26eba6bf1605f7309e446ce4);
+            
+        
+
+        marker_fdedb58ae6dab4ff8bd9b19b08d84a96.bindPopup(popup_ea890cd8b3b36678ca463b0330686d2f)
+        ;
+
+        
+    
+    
+            var marker_054757014b51a937bbeb52af6001716e = L.marker(
+                [53.1212762, -4.1277481],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_f9a64887b5d87249e0f0b6058bd73c24 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.13\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_054757014b51a937bbeb52af6001716e.setIcon(div_icon_f9a64887b5d87249e0f0b6058bd73c24);
+        
+    
+        var popup_45063789804c6f6bda426c572495fc05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a6f20bfc9cf61984a7c964d2f3b2b41 = $(`<div id="html_2a6f20bfc9cf61984a7c964d2f3b2b41" style="width: 100.0%; height: 100.0%;">ID: 2<br>Model: Mitsubishi Ecodan<br>COP: 4.13</div>`)[0];
+                popup_45063789804c6f6bda426c572495fc05.setContent(html_2a6f20bfc9cf61984a7c964d2f3b2b41);
+            
+        
+
+        marker_054757014b51a937bbeb52af6001716e.bindPopup(popup_45063789804c6f6bda426c572495fc05)
+        ;
+
+        
+    
+    
+            var marker_825a2a2d8464d6dac55940b56f189d4a = L.marker(
+                [53.4794892, -2.2451148],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_40508ffe46555a7f233a6a7ccbec8747 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.23\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_825a2a2d8464d6dac55940b56f189d4a.setIcon(div_icon_40508ffe46555a7f233a6a7ccbec8747);
+        
+    
+        var popup_9c5ba950088da9a0176ac8b3ca698744 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5472d23c8cdee6dad5e6a9f0cbbab62b = $(`<div id="html_5472d23c8cdee6dad5e6a9f0cbbab62b" style="width: 100.0%; height: 100.0%;">ID: 3<br>Model: NIBE F2040<br>COP: 3.23</div>`)[0];
+                popup_9c5ba950088da9a0176ac8b3ca698744.setContent(html_5472d23c8cdee6dad5e6a9f0cbbab62b);
+            
+        
+
+        marker_825a2a2d8464d6dac55940b56f189d4a.bindPopup(popup_9c5ba950088da9a0176ac8b3ca698744)
+        ;
+
+        
+    
+    
+            var marker_b06e50f266e504e9d003f351281de3bd = L.marker(
+                [53.1212762, -4.1277481],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_04ca6c02caffe13826a7ce910918b1e4 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.42\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_b06e50f266e504e9d003f351281de3bd.setIcon(div_icon_04ca6c02caffe13826a7ce910918b1e4);
+        
+    
+        var popup_68e5b6313165e07ff0ee1d901d3afa9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab66d100de17a6131a85ad0fe4d053b9 = $(`<div id="html_ab66d100de17a6131a85ad0fe4d053b9" style="width: 100.0%; height: 100.0%;">ID: 4<br>Model: Samsung Gen 6<br>COP: 4.42</div>`)[0];
+                popup_68e5b6313165e07ff0ee1d901d3afa9d.setContent(html_ab66d100de17a6131a85ad0fe4d053b9);
+            
+        
+
+        marker_b06e50f266e504e9d003f351281de3bd.bindPopup(popup_68e5b6313165e07ff0ee1d901d3afa9d)
+        ;
+
+        
+    
+    
+            var marker_9b7b31f38c2da077a8a536800cd06d1f = L.marker(
+                [51.3392845, -0.7460981],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_e2bfef37bc33fc8dfaed985cabc90c0e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.25\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_9b7b31f38c2da077a8a536800cd06d1f.setIcon(div_icon_e2bfef37bc33fc8dfaed985cabc90c0e);
+        
+    
+        var popup_3c291110a64fe75c0c1ce861bb4402a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f97b9752c846438b9639061f1686fa81 = $(`<div id="html_f97b9752c846438b9639061f1686fa81" style="width: 100.0%; height: 100.0%;">ID: 5<br>Model: Vaillant Arotherm+<br>COP: 4.25</div>`)[0];
+                popup_3c291110a64fe75c0c1ce861bb4402a9.setContent(html_f97b9752c846438b9639061f1686fa81);
+            
+        
+
+        marker_9b7b31f38c2da077a8a536800cd06d1f.bindPopup(popup_3c291110a64fe75c0c1ce861bb4402a9)
+        ;
+
+        
+    
+    
+            var marker_0a6e7e287b5104284a3a73c38a621e8d = L.marker(
+                [53.4794892, -2.2451148],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_4301ddddde32e44a6443ec9e82a65c26 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.81\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_0a6e7e287b5104284a3a73c38a621e8d.setIcon(div_icon_4301ddddde32e44a6443ec9e82a65c26);
+        
+    
+        var popup_c087bcc81629fe8acaae617f02f92290 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d83909c42a7df60741b27d68a1aad7f7 = $(`<div id="html_d83909c42a7df60741b27d68a1aad7f7" style="width: 100.0%; height: 100.0%;">ID: 6<br>Model: Mitsubishi Ecodan<br>COP: 3.81</div>`)[0];
+                popup_c087bcc81629fe8acaae617f02f92290.setContent(html_d83909c42a7df60741b27d68a1aad7f7);
+            
+        
+
+        marker_0a6e7e287b5104284a3a73c38a621e8d.bindPopup(popup_c087bcc81629fe8acaae617f02f92290)
+        ;
+
+        
+    
+    
+            var marker_d7ac60b9f3ecb07b0c66af41fa318f04 = L.marker(
+                [50.6096257, -2.4543424],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_c1e8a285dc9ad9aa222c5f2d295ae9da = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.42\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_d7ac60b9f3ecb07b0c66af41fa318f04.setIcon(div_icon_c1e8a285dc9ad9aa222c5f2d295ae9da);
+        
+    
+        var popup_7c2edbf3a3eb6f704a5f8ad5c420c955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c37460418315beb828be6eb37ac6cec5 = $(`<div id="html_c37460418315beb828be6eb37ac6cec5" style="width: 100.0%; height: 100.0%;">ID: 7<br>Model: Mitsubishi Ecodan<br>COP: 3.42</div>`)[0];
+                popup_7c2edbf3a3eb6f704a5f8ad5c420c955.setContent(html_c37460418315beb828be6eb37ac6cec5);
+            
+        
+
+        marker_d7ac60b9f3ecb07b0c66af41fa318f04.bindPopup(popup_7c2edbf3a3eb6f704a5f8ad5c420c955)
+        ;
+
+        
+    
+    
+            var marker_1cae66c9c7785f214ac51cc5101ca9e5 = L.marker(
+                [56.3333331, -3.0000001],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_4c90fe123530b23f37dc5e649957b7e3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.10\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_1cae66c9c7785f214ac51cc5101ca9e5.setIcon(div_icon_4c90fe123530b23f37dc5e649957b7e3);
+        
+    
+        var popup_dfca20c783b1a3be2fed9dc1c9012f62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ab8aa6f700eb65e3c387136e192476a = $(`<div id="html_2ab8aa6f700eb65e3c387136e192476a" style="width: 100.0%; height: 100.0%;">ID: 8<br>Model: Vaillant Arotherm+<br>COP: 4.10</div>`)[0];
+                popup_dfca20c783b1a3be2fed9dc1c9012f62.setContent(html_2ab8aa6f700eb65e3c387136e192476a);
+            
+        
+
+        marker_1cae66c9c7785f214ac51cc5101ca9e5.bindPopup(popup_dfca20c783b1a3be2fed9dc1c9012f62)
+        ;
+
+        
+    
+    
+            var marker_baecc2349b9bf5c4bece2d1ccc0a5a0d = L.marker(
+                [53.3806626, -1.4702278],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_a37d5b849d38f7018072e12e192954a3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.94\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_baecc2349b9bf5c4bece2d1ccc0a5a0d.setIcon(div_icon_a37d5b849d38f7018072e12e192954a3);
+        
+    
+        var popup_10d10e6c983b11ee7e0125dc95ec32ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_543e28b4d23a3574312d3ed39c09c4fc = $(`<div id="html_543e28b4d23a3574312d3ed39c09c4fc" style="width: 100.0%; height: 100.0%;">ID: 9<br>Model: Vaillant Arotherm+<br>COP: 3.94</div>`)[0];
+                popup_10d10e6c983b11ee7e0125dc95ec32ab.setContent(html_543e28b4d23a3574312d3ed39c09c4fc);
+            
+        
+
+        marker_baecc2349b9bf5c4bece2d1ccc0a5a0d.bindPopup(popup_10d10e6c983b11ee7e0125dc95ec32ab)
+        ;
+
+        
+    
+    
+            var marker_f96ec65484ae6c37516c46cdeae34fc7 = L.marker(
+                [54.13453275, -1.498628491239545],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_78710c55eb856bfcdd52d50afb350342 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.38\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_f96ec65484ae6c37516c46cdeae34fc7.setIcon(div_icon_78710c55eb856bfcdd52d50afb350342);
+        
+    
+        var popup_9a675f813b8c62d517eb2af42c26efdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a782cc4c7df666ca47ff68c79eb40c2 = $(`<div id="html_1a782cc4c7df666ca47ff68c79eb40c2" style="width: 100.0%; height: 100.0%;">ID: 10<br>Model: Grant Aerona3 (hybrid)<br>COP: 4.38</div>`)[0];
+                popup_9a675f813b8c62d517eb2af42c26efdf.setContent(html_1a782cc4c7df666ca47ff68c79eb40c2);
+            
+        
+
+        marker_f96ec65484ae6c37516c46cdeae34fc7.bindPopup(popup_9a675f813b8c62d517eb2af42c26efdf)
+        ;
+
+        
+    
+    
+            var marker_c4ab7f5f4692792fc52f3db20a9d6e85 = L.marker(
+                [52.9142235, -1.4719885461266053],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_27406137231b06cb2f4384c1a92277ee = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.46\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_c4ab7f5f4692792fc52f3db20a9d6e85.setIcon(div_icon_27406137231b06cb2f4384c1a92277ee);
+        
+    
+        var popup_89b9439adb8fc98eba7ab61a4f0414cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a97c2e34b68e3cdc96a08054d24ae5b8 = $(`<div id="html_a97c2e34b68e3cdc96a08054d24ae5b8" style="width: 100.0%; height: 100.0%;">ID: 11<br>Model: NIBE F1145<br>COP: 4.46</div>`)[0];
+                popup_89b9439adb8fc98eba7ab61a4f0414cb.setContent(html_a97c2e34b68e3cdc96a08054d24ae5b8);
+            
+        
+
+        marker_c4ab7f5f4692792fc52f3db20a9d6e85.bindPopup(popup_89b9439adb8fc98eba7ab61a4f0414cb)
+        ;
+
+        
+    
+    
+            var marker_e7cf9e3bb32008bbb713250c69eee821 = L.marker(
+                [53.741427099999996, -1.7202003766777243],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_7d12ecc00dbee0ddf44bd39c00ebe235 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.65\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_e7cf9e3bb32008bbb713250c69eee821.setIcon(div_icon_7d12ecc00dbee0ddf44bd39c00ebe235);
+        
+    
+        var popup_fd77c4e40e1dfbb0dc2b721edc6c408f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31f3a8d2a894d13fe3085e4387d4e410 = $(`<div id="html_31f3a8d2a894d13fe3085e4387d4e410" style="width: 100.0%; height: 100.0%;">ID: 12<br>Model: Mitsubishi Ecodan<br>COP: 3.65</div>`)[0];
+                popup_fd77c4e40e1dfbb0dc2b721edc6c408f.setContent(html_31f3a8d2a894d13fe3085e4387d4e410);
+            
+        
+
+        marker_e7cf9e3bb32008bbb713250c69eee821.bindPopup(popup_fd77c4e40e1dfbb0dc2b721edc6c408f)
+        ;
+
+        
+    
+    
+            var marker_9a5d0d3ef6386f4843deffa963e1c715 = L.marker(
+                [52.5905191, -3.8518104],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_97db46f029c676cf99ca5e4533dfe8a0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e5.26\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_9a5d0d3ef6386f4843deffa963e1c715.setIcon(div_icon_97db46f029c676cf99ca5e4533dfe8a0);
+        
+    
+        var popup_732baddb604171a23c77030f9c2c0e42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_158a70e5e12deaecd1e5c857440fed78 = $(`<div id="html_158a70e5e12deaecd1e5c857440fed78" style="width: 100.0%; height: 100.0%;">ID: 13<br>Model: Mitsubishi Ecodan<br>COP: 5.26</div>`)[0];
+                popup_732baddb604171a23c77030f9c2c0e42.setContent(html_158a70e5e12deaecd1e5c857440fed78);
+            
+        
+
+        marker_9a5d0d3ef6386f4843deffa963e1c715.bindPopup(popup_732baddb604171a23c77030f9c2c0e42)
+        ;
+
+        
+    
+    
+            var marker_7b5cbab5a6658972559db2acfefc6fdc = L.marker(
+                [54.1359924, -0.7986769],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_fcbbc999c76d178e617934a7a2ac5345 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.26\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_7b5cbab5a6658972559db2acfefc6fdc.setIcon(div_icon_fcbbc999c76d178e617934a7a2ac5345);
+        
+    
+        var popup_65526ae3de8b0432b09bb4983dc3deae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1608e0a5f0f7db8658d179f71af95e35 = $(`<div id="html_1608e0a5f0f7db8658d179f71af95e35" style="width: 100.0%; height: 100.0%;">ID: 14<br>Model: Mitsubishi Ecodan<br>COP: 3.26</div>`)[0];
+                popup_65526ae3de8b0432b09bb4983dc3deae.setContent(html_1608e0a5f0f7db8658d179f71af95e35);
+            
+        
+
+        marker_7b5cbab5a6658972559db2acfefc6fdc.bindPopup(popup_65526ae3de8b0432b09bb4983dc3deae)
+        ;
+
+        
+    
+    
+            var marker_b5bdf7e60bff7699bb32a104cf98d133 = L.marker(
+                [52.5135785, -3.314371],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_5fa8aaba0921d0971fa665709049c8c2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.09\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_b5bdf7e60bff7699bb32a104cf98d133.setIcon(div_icon_5fa8aaba0921d0971fa665709049c8c2);
+        
+    
+        var popup_c32d91b70b0e73a37d95d3f70579188b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_508e8b7573088c13d49071ae2fdf5b6b = $(`<div id="html_508e8b7573088c13d49071ae2fdf5b6b" style="width: 100.0%; height: 100.0%;">ID: 15<br>Model: Panasonic 'J' Aquarea<br>COP: 4.09</div>`)[0];
+                popup_c32d91b70b0e73a37d95d3f70579188b.setContent(html_508e8b7573088c13d49071ae2fdf5b6b);
+            
+        
+
+        marker_b5bdf7e60bff7699bb32a104cf98d133.bindPopup(popup_c32d91b70b0e73a37d95d3f70579188b)
+        ;
+
+        
+    
+    
+            var marker_5ee611309eaa3262d37d80dcb63a6cda = L.marker(
+                [51.7643786, -2.1880661838719386],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_ad226ce8ba39a2d86c1a79da081a31c9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.39\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_5ee611309eaa3262d37d80dcb63a6cda.setIcon(div_icon_ad226ce8ba39a2d86c1a79da081a31c9);
+        
+    
+        var popup_ce441c9bef7eb55c87bc44304ad5465f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0edd54791e64e65fc05e7c179db8d8f = $(`<div id="html_c0edd54791e64e65fc05e7c179db8d8f" style="width: 100.0%; height: 100.0%;">ID: 16<br>Model: Mitsubishi Ecodan<br>COP: 4.39</div>`)[0];
+                popup_ce441c9bef7eb55c87bc44304ad5465f.setContent(html_c0edd54791e64e65fc05e7c179db8d8f);
+            
+        
+
+        marker_5ee611309eaa3262d37d80dcb63a6cda.bindPopup(popup_ce441c9bef7eb55c87bc44304ad5465f)
+        ;
+
+        
+    
+    
+            var marker_d28cde3e0a877b6fddd341f8982c21f2 = L.marker(
+                [51.3471927, -2.9778916],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_7ecace5467b317876ed35d8fd47d5a11 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.46\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_d28cde3e0a877b6fddd341f8982c21f2.setIcon(div_icon_7ecace5467b317876ed35d8fd47d5a11);
+        
+    
+        var popup_c4b07eee2a019b3f33844b0526433763 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80272d98ce1ab6639b93ec220b4e9703 = $(`<div id="html_80272d98ce1ab6639b93ec220b4e9703" style="width: 100.0%; height: 100.0%;">ID: 17<br>Model: Daikin Altherma 3<br>COP: 3.46</div>`)[0];
+                popup_c4b07eee2a019b3f33844b0526433763.setContent(html_80272d98ce1ab6639b93ec220b4e9703);
+            
+        
+
+        marker_d28cde3e0a877b6fddd341f8982c21f2.bindPopup(popup_c4b07eee2a019b3f33844b0526433763)
+        ;
+
+        
+    
+    
+            var marker_f09451206963ec57e9ee53b64ca912fd = L.marker(
+                [52.9534193, -1.1496461],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_cc898a05963ce7dc7d7e4c49ea9b29ed = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.81\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_f09451206963ec57e9ee53b64ca912fd.setIcon(div_icon_cc898a05963ce7dc7d7e4c49ea9b29ed);
+        
+    
+        var popup_af7cf0cc0434a1bc2787218000e64438 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdc8aa4d741d856c04ad99b85beca5b3 = $(`<div id="html_fdc8aa4d741d856c04ad99b85beca5b3" style="width: 100.0%; height: 100.0%;">ID: 20<br>Model: Midea<br>COP: 3.81</div>`)[0];
+                popup_af7cf0cc0434a1bc2787218000e64438.setContent(html_fdc8aa4d741d856c04ad99b85beca5b3);
+            
+        
+
+        marker_f09451206963ec57e9ee53b64ca912fd.bindPopup(popup_af7cf0cc0434a1bc2787218000e64438)
+        ;
+
+        
+    
+    
+            var marker_fe3e52ce6757981a9e54b079ef5bb57a = L.marker(
+                [51.4538022, -2.5972985],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_579bf4b9ecd8b5642bd1d85800b07822 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.90\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_fe3e52ce6757981a9e54b079ef5bb57a.setIcon(div_icon_579bf4b9ecd8b5642bd1d85800b07822);
+        
+    
+        var popup_f4e74a70343fe0904b2b9b02c257d564 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e006b56adee69e7cfc7ec59f211d096 = $(`<div id="html_2e006b56adee69e7cfc7ec59f211d096" style="width: 100.0%; height: 100.0%;">ID: 21<br>Model: Vaillant Arotherm+<br>COP: 3.90</div>`)[0];
+                popup_f4e74a70343fe0904b2b9b02c257d564.setContent(html_2e006b56adee69e7cfc7ec59f211d096);
+            
+        
+
+        marker_fe3e52ce6757981a9e54b079ef5bb57a.bindPopup(popup_f4e74a70343fe0904b2b9b02c257d564)
+        ;
+
+        
+    
+    
+            var marker_2865b77e0f7fe5b440de4fb126268878 = L.marker(
+                [52.2055314, 0.1186637],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_45388bcd5e300e8e823eb6e49a8e3531 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.33\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_2865b77e0f7fe5b440de4fb126268878.setIcon(div_icon_45388bcd5e300e8e823eb6e49a8e3531);
+        
+    
+        var popup_330feca184e8f0ab84b2cdba4cb81976 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eb0aa2a71e5a45c20d032ee6ba14dce = $(`<div id="html_8eb0aa2a71e5a45c20d032ee6ba14dce" style="width: 100.0%; height: 100.0%;">ID: 22<br>Model: Samsung HTQ<br>COP: 3.33</div>`)[0];
+                popup_330feca184e8f0ab84b2cdba4cb81976.setContent(html_8eb0aa2a71e5a45c20d032ee6ba14dce);
+            
+        
+
+        marker_2865b77e0f7fe5b440de4fb126268878.bindPopup(popup_330feca184e8f0ab84b2cdba4cb81976)
+        ;
+
+        
+    
+    
+            var marker_24489a0cf1573ed600a9d30046df0fc5 = L.marker(
+                [51.5615327, -1.7854322],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_a8c294b8706f5a31189444a505b22c66 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.77\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_24489a0cf1573ed600a9d30046df0fc5.setIcon(div_icon_a8c294b8706f5a31189444a505b22c66);
+        
+    
+        var popup_d397e9cf645a400948f89ee344a3d173 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81059414428dfa6098d5a025953ca1c0 = $(`<div id="html_81059414428dfa6098d5a025953ca1c0" style="width: 100.0%; height: 100.0%;">ID: 23<br>Model: Daikin Altherma 3<br>COP: 3.77</div>`)[0];
+                popup_d397e9cf645a400948f89ee344a3d173.setContent(html_81059414428dfa6098d5a025953ca1c0);
+            
+        
+
+        marker_24489a0cf1573ed600a9d30046df0fc5.bindPopup(popup_d397e9cf645a400948f89ee344a3d173)
+        ;
+
+        
+    
+    
+            var marker_d0054dcb4b4637fafc6bc867ffe2927a = L.marker(
+                [51.956864949999996, -0.22305090784172493],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_e650a9cf95ec0ed455452893d9c766c1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.70\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_d0054dcb4b4637fafc6bc867ffe2927a.setIcon(div_icon_e650a9cf95ec0ed455452893d9c766c1);
+        
+    
+        var popup_99a67f5408ef5bf172d24ca3b8ad28c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfbc0e212d718f3762acfb8e2522d8f0 = $(`<div id="html_dfbc0e212d718f3762acfb8e2522d8f0" style="width: 100.0%; height: 100.0%;">ID: 24<br>Model: Vaillant Arotherm+<br>COP: 3.70</div>`)[0];
+                popup_99a67f5408ef5bf172d24ca3b8ad28c0.setContent(html_dfbc0e212d718f3762acfb8e2522d8f0);
+            
+        
+
+        marker_d0054dcb4b4637fafc6bc867ffe2927a.bindPopup(popup_99a67f5408ef5bf172d24ca3b8ad28c0)
+        ;
+
+        
+    
+    
+            var marker_aba3d1f90922cb3259a6753045c04550 = L.marker(
+                [42.6977028, 23.3217359],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_7b2b6955ba2be6148fc8abfdef348668 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e2.80\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_aba3d1f90922cb3259a6753045c04550.setIcon(div_icon_7b2b6955ba2be6148fc8abfdef348668);
+        
+    
+        var popup_2babf25639a2c0141e6057304a26b87b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9ced9572a4ba3dc6529ded4c31db4a1 = $(`<div id="html_a9ced9572a4ba3dc6529ded4c31db4a1" style="width: 100.0%; height: 100.0%;">ID: 25<br>Model: Atlantic Alfea Extensa<br>COP: 2.80</div>`)[0];
+                popup_2babf25639a2c0141e6057304a26b87b.setContent(html_a9ced9572a4ba3dc6529ded4c31db4a1);
+            
+        
+
+        marker_aba3d1f90922cb3259a6753045c04550.bindPopup(popup_2babf25639a2c0141e6057304a26b87b)
+        ;
+
+        
+    
+    
+            var marker_f72a2ddb340bdf830f02ecec4894de90 = L.marker(
+                [52.1927803, -1.70634],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_0db92e479f6b99cc9682c3a70d9c0108 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.01\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_f72a2ddb340bdf830f02ecec4894de90.setIcon(div_icon_0db92e479f6b99cc9682c3a70d9c0108);
+        
+    
+        var popup_14a4b8ca9738c46d89d1ec5775e0d52e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45cac9b9d9bc946ec4707b3b7ede08a8 = $(`<div id="html_45cac9b9d9bc946ec4707b3b7ede08a8" style="width: 100.0%; height: 100.0%;">ID: 26<br>Model: Vaillant Arotherm+<br>COP: 4.01</div>`)[0];
+                popup_14a4b8ca9738c46d89d1ec5775e0d52e.setContent(html_45cac9b9d9bc946ec4707b3b7ede08a8);
+            
+        
+
+        marker_f72a2ddb340bdf830f02ecec4894de90.bindPopup(popup_14a4b8ca9738c46d89d1ec5775e0d52e)
+        ;
+
+        
+    
+    
+            var marker_006b5638e92f0c5ac276e1135e5a3569 = L.marker(
+                [51.262826, -1.0861976],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_08c0058c14a866345ae6f35574bdb3c7 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.78\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_006b5638e92f0c5ac276e1135e5a3569.setIcon(div_icon_08c0058c14a866345ae6f35574bdb3c7);
+        
+    
+        var popup_3d74646387ae4a41425aa928a4c4d04a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_326b8dc284981a4622be90a051ee7973 = $(`<div id="html_326b8dc284981a4622be90a051ee7973" style="width: 100.0%; height: 100.0%;">ID: 27<br>Model: Daikin Altherma 3<br>COP: 3.78</div>`)[0];
+                popup_3d74646387ae4a41425aa928a4c4d04a.setContent(html_326b8dc284981a4622be90a051ee7973);
+            
+        
+
+        marker_006b5638e92f0c5ac276e1135e5a3569.bindPopup(popup_3d74646387ae4a41425aa928a4c4d04a)
+        ;
+
+        
+    
+    
+            var marker_f1578e27826fc81c7fd3d72249761941 = L.marker(
+                [51.6195955, -3.9459248],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_d8ac9a22bff6f1708818ce44456a6883 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.33\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_f1578e27826fc81c7fd3d72249761941.setIcon(div_icon_d8ac9a22bff6f1708818ce44456a6883);
+        
+    
+        var popup_27d051f058861d7bf115e1a2455ac8b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e22a37ae967397827328accb87e00f = $(`<div id="html_67e22a37ae967397827328accb87e00f" style="width: 100.0%; height: 100.0%;">ID: 31<br>Model: Mitsubishi Ecodan<br>COP: 3.33</div>`)[0];
+                popup_27d051f058861d7bf115e1a2455ac8b8.setContent(html_67e22a37ae967397827328accb87e00f);
+            
+        
+
+        marker_f1578e27826fc81c7fd3d72249761941.bindPopup(popup_27d051f058861d7bf115e1a2455ac8b8)
+        ;
+
+        
+    
+    
+            var marker_8f6b6eb76d7ab82364b8b8e5b7acf398 = L.marker(
+                [51.4020243, -1.3242212],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_fa32f4679793d28d807455aa5fd78aaa = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.34\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_8f6b6eb76d7ab82364b8b8e5b7acf398.setIcon(div_icon_fa32f4679793d28d807455aa5fd78aaa);
+        
+    
+        var popup_ab4d463bac76e188c58fe920b52b6247 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0208050b8c894a5825f6e24e356e2fe6 = $(`<div id="html_0208050b8c894a5825f6e24e356e2fe6" style="width: 100.0%; height: 100.0%;">ID: 32<br>Model: Mitsubishi Ecodan<br>COP: 3.34</div>`)[0];
+                popup_ab4d463bac76e188c58fe920b52b6247.setContent(html_0208050b8c894a5825f6e24e356e2fe6);
+            
+        
+
+        marker_8f6b6eb76d7ab82364b8b8e5b7acf398.bindPopup(popup_ab4d463bac76e188c58fe920b52b6247)
+        ;
+
+        
+    
+    
+            var marker_d4e898e10ffa36c0d8b6b033c6f27a3b = L.marker(
+                [52.6780419, -2.4514273],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_176f45b6437baa49eeb9f88124ca254e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.25\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_d4e898e10ffa36c0d8b6b033c6f27a3b.setIcon(div_icon_176f45b6437baa49eeb9f88124ca254e);
+        
+    
+        var popup_07e47094a0938501d408246f3bd857a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d5a709318c6211ef9fcefaeeeeaa913 = $(`<div id="html_6d5a709318c6211ef9fcefaeeeeaa913" style="width: 100.0%; height: 100.0%;">ID: 33<br>Model: Vaillant Arotherm+<br>COP: 4.25</div>`)[0];
+                popup_07e47094a0938501d408246f3bd857a3.setContent(html_6d5a709318c6211ef9fcefaeeeeaa913);
+            
+        
+
+        marker_d4e898e10ffa36c0d8b6b033c6f27a3b.bindPopup(popup_07e47094a0938501d408246f3bd857a3)
+        ;
+
+        
+    
+    
+            var marker_a6defadf3c72b8bc5a92458b94b03171 = L.marker(
+                [52.0601807, -1.3402795],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_5745837cee1e543c45f8b5dbbe667587 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.07\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_a6defadf3c72b8bc5a92458b94b03171.setIcon(div_icon_5745837cee1e543c45f8b5dbbe667587);
+        
+    
+        var popup_12e8ce12d99c3951ee665041f86d22b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a6d2719c90bd714031ee5928494dec = $(`<div id="html_52a6d2719c90bd714031ee5928494dec" style="width: 100.0%; height: 100.0%;">ID: 34<br>Model: Vaillant Arotherm+<br>COP: 4.07</div>`)[0];
+                popup_12e8ce12d99c3951ee665041f86d22b6.setContent(html_52a6d2719c90bd714031ee5928494dec);
+            
+        
+
+        marker_a6defadf3c72b8bc5a92458b94b03171.bindPopup(popup_12e8ce12d99c3951ee665041f86d22b6)
+        ;
+
+        
+    
+    
+            var marker_491fdaee9a3d214f12b6b5f712d6c82e = L.marker(
+                [52.3880787, -2.2478582],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_36196e40c5d677c41922e5712fb2deba = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.09\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_491fdaee9a3d214f12b6b5f712d6c82e.setIcon(div_icon_36196e40c5d677c41922e5712fb2deba);
+        
+    
+        var popup_dd5c70e144d1256d8b887a9d3bde3c96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dad938b7e5df376e1c3421f883b0e123 = $(`<div id="html_dad938b7e5df376e1c3421f883b0e123" style="width: 100.0%; height: 100.0%;">ID: 37<br>Model: Acond PRO-N<br>COP: 4.09</div>`)[0];
+                popup_dd5c70e144d1256d8b887a9d3bde3c96.setContent(html_dad938b7e5df376e1c3421f883b0e123);
+            
+        
+
+        marker_491fdaee9a3d214f12b6b5f712d6c82e.bindPopup(popup_dd5c70e144d1256d8b887a9d3bde3c96)
+        ;
+
+        
+    
+    
+            var marker_7cc8f8cf70837de3e15cd7d375779253 = L.marker(
+                [51.2828601, -0.8316334471979006],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_dcd9f26a438ecd2b31022428f06798e2 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.39\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_7cc8f8cf70837de3e15cd7d375779253.setIcon(div_icon_dcd9f26a438ecd2b31022428f06798e2);
+        
+    
+        var popup_8be928ca9f04b93f755cc2f941a04a14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_078862738fe5daf8648dadabd1ffac7e = $(`<div id="html_078862738fe5daf8648dadabd1ffac7e" style="width: 100.0%; height: 100.0%;">ID: 39<br>Model: Daikin Altherma 3 H HT<br>COP: 3.39</div>`)[0];
+                popup_8be928ca9f04b93f755cc2f941a04a14.setContent(html_078862738fe5daf8648dadabd1ffac7e);
+            
+        
+
+        marker_7cc8f8cf70837de3e15cd7d375779253.bindPopup(popup_8be928ca9f04b93f755cc2f941a04a14)
+        ;
+
+        
+    
+    
+            var marker_37c78a3f66e04518a792deac0d65a675 = L.marker(
+                [52.9142235, -1.4719885461266053],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_b2e67505fc3fb51e3482259f323d5c41 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e2.72\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_37c78a3f66e04518a792deac0d65a675.setIcon(div_icon_b2e67505fc3fb51e3482259f323d5c41);
+        
+    
+        var popup_5317d411f8828276acd9836d1db8efe7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21d9fcaff8bfe556f2163df7a9c28470 = $(`<div id="html_21d9fcaff8bfe556f2163df7a9c28470" style="width: 100.0%; height: 100.0%;">ID: 40<br>Model: Mitsubishi Ecodan<br>COP: 2.72</div>`)[0];
+                popup_5317d411f8828276acd9836d1db8efe7.setContent(html_21d9fcaff8bfe556f2163df7a9c28470);
+            
+        
+
+        marker_37c78a3f66e04518a792deac0d65a675.bindPopup(popup_5317d411f8828276acd9836d1db8efe7)
+        ;
+
+        
+    
+    
+            var marker_2bbd98705fb5e96d6abfa2aae6087337 = L.marker(
+                [51.753051, -0.3379675],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_039b448356b06f852895472dca81e54b = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.77\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_2bbd98705fb5e96d6abfa2aae6087337.setIcon(div_icon_039b448356b06f852895472dca81e54b);
+        
+    
+        var popup_d4ed0bad2093e18f2537351192a8efb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_405a9954941c2e830d9e8810911999b1 = $(`<div id="html_405a9954941c2e830d9e8810911999b1" style="width: 100.0%; height: 100.0%;">ID: 41<br>Model: Vaillant Arotherm+<br>COP: 3.77</div>`)[0];
+                popup_d4ed0bad2093e18f2537351192a8efb3.setContent(html_405a9954941c2e830d9e8810911999b1);
+            
+        
+
+        marker_2bbd98705fb5e96d6abfa2aae6087337.bindPopup(popup_d4ed0bad2093e18f2537351192a8efb3)
+        ;
+
+        
+    
+    
+            var marker_ea0ca1c0fddab344c6849a1c87b72d23 = L.marker(
+                [55.9533456, -3.1883749],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_78cc10c2c1c1ec96290fa901ce6e45b1 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.40\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_ea0ca1c0fddab344c6849a1c87b72d23.setIcon(div_icon_78cc10c2c1c1ec96290fa901ce6e45b1);
+        
+    
+        var popup_7b018030f57d97ab3c2274d734d17a79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46ea7d0073194fb398ccab6a1fe92cf5 = $(`<div id="html_46ea7d0073194fb398ccab6a1fe92cf5" style="width: 100.0%; height: 100.0%;">ID: 43<br>Model: Vaillant Arotherm+<br>COP: 3.40</div>`)[0];
+                popup_7b018030f57d97ab3c2274d734d17a79.setContent(html_46ea7d0073194fb398ccab6a1fe92cf5);
+            
+        
+
+        marker_ea0ca1c0fddab344c6849a1c87b72d23.bindPopup(popup_7b018030f57d97ab3c2274d734d17a79)
+        ;
+
+        
+    
+    
+            var marker_5522a64558080392c7eb345bab5c72b6 = L.marker(
+                [51.2918693, -0.7539836],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_5859fedb7cd22b6da87460439e6eab16 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.81\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_5522a64558080392c7eb345bab5c72b6.setIcon(div_icon_5859fedb7cd22b6da87460439e6eab16);
+        
+    
+        var popup_bfddc6c1bbdb599808edfbd14afe0cdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2af02317ae8e93b0d0e244dc7bfb7290 = $(`<div id="html_2af02317ae8e93b0d0e244dc7bfb7290" style="width: 100.0%; height: 100.0%;">ID: 44<br>Model: Daikin Altherma 3<br>COP: 3.81</div>`)[0];
+                popup_bfddc6c1bbdb599808edfbd14afe0cdb.setContent(html_2af02317ae8e93b0d0e244dc7bfb7290);
+            
+        
+
+        marker_5522a64558080392c7eb345bab5c72b6.bindPopup(popup_bfddc6c1bbdb599808edfbd14afe0cdb)
+        ;
+
+        
+    
+    
+            var marker_d84ea56cb062243cf938b2eb2a922324 = L.marker(
+                [52.0406502, -0.7594092],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_e74ea6b1d5d44be61950a86d5bc217c8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.47\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_d84ea56cb062243cf938b2eb2a922324.setIcon(div_icon_e74ea6b1d5d44be61950a86d5bc217c8);
+        
+    
+        var popup_a9df618137fa71866c82e2501fb815bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abb0f068069dfba050cf043518bb3bbd = $(`<div id="html_abb0f068069dfba050cf043518bb3bbd" style="width: 100.0%; height: 100.0%;">ID: 45<br>Model: Samsung Gen 6<br>COP: 3.47</div>`)[0];
+                popup_a9df618137fa71866c82e2501fb815bd.setContent(html_abb0f068069dfba050cf043518bb3bbd);
+            
+        
+
+        marker_d84ea56cb062243cf938b2eb2a922324.bindPopup(popup_a9df618137fa71866c82e2501fb815bd)
+        ;
+
+        
+    
+    
+            var marker_e252bcdbec87865475bf4a5a299583ba = L.marker(
+                [51.2898673, -0.7255944],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_83d82c285fab4b26de50db2c834ffe1e = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e4.77\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_e252bcdbec87865475bf4a5a299583ba.setIcon(div_icon_83d82c285fab4b26de50db2c834ffe1e);
+        
+    
+        var popup_a2ed879a18e605004effc33c1369b54d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b001b289b697533159fdd504a366ccaa = $(`<div id="html_b001b289b697533159fdd504a366ccaa" style="width: 100.0%; height: 100.0%;">ID: 46<br>Model: Vaillant Arotherm+<br>COP: 4.77</div>`)[0];
+                popup_a2ed879a18e605004effc33c1369b54d.setContent(html_b001b289b697533159fdd504a366ccaa);
+            
+        
+
+        marker_e252bcdbec87865475bf4a5a299583ba.bindPopup(popup_a2ed879a18e605004effc33c1369b54d)
+        ;
+
+        
+    
+    
+            var marker_f7ff2477a0828df04bcbd15778973b9b = L.marker(
+                [53.3806626, -1.4702278],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_4ae4f19ebbb374774b070738f5c8b6ec = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e3.67\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_f7ff2477a0828df04bcbd15778973b9b.setIcon(div_icon_4ae4f19ebbb374774b070738f5c8b6ec);
+        
+    
+        var popup_66ccff1b30db2cdd9b14dcd192fe3728 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c155a33114e38ab9c354649070a7b79 = $(`<div id="html_1c155a33114e38ab9c354649070a7b79" style="width: 100.0%; height: 100.0%;">ID: 47<br>Model: Kensa EVO 13<br>COP: 3.67</div>`)[0];
+                popup_66ccff1b30db2cdd9b14dcd192fe3728.setContent(html_1c155a33114e38ab9c354649070a7b79);
+            
+        
+
+        marker_f7ff2477a0828df04bcbd15778973b9b.bindPopup(popup_66ccff1b30db2cdd9b14dcd192fe3728)
+        ;
+
+        
+    
+    
+            var marker_fb71fb8f6a411bb291913b393696ac80 = L.marker(
+                [51.4880902, -2.6761284],
+                {
+}
+            ).addTo(map_55c9165574a455858c2ba8706db25472);
+        
+    
+            var div_icon_15f039e022dd3ad904b8ec90d73fd843 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12pt; color: blue;\"\u003e2.44\u003c/div\u003e",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "className": "empty",
+});
+            marker_fb71fb8f6a411bb291913b393696ac80.setIcon(div_icon_15f039e022dd3ad904b8ec90d73fd843);
+        
+    
+        var popup_72f87fdbfcfce602fe093b87be9fb2dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81b9855a84f3751bacb73ee2ed5650e7 = $(`<div id="html_81b9855a84f3751bacb73ee2ed5650e7" style="width: 100.0%; height: 100.0%;">ID: 49<br>Model: Daikin Altherma<br>COP: 2.44</div>`)[0];
+                popup_72f87fdbfcfce602fe093b87be9fb2dd.setContent(html_81b9855a84f3751bacb73ee2ed5650e7);
+            
+        
+
+        marker_fb71fb8f6a411bb291913b393696ac80.bindPopup(popup_72f87fdbfcfce602fe093b87be9fb2dd)
+        ;
+
+        
+    
+</script>
+</html>
