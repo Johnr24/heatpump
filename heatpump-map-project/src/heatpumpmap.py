@@ -32,13 +32,13 @@ for system_id in system_id_range:
         # Merge stats into system data
         system['stats'] = stats[str(system_id)]
 
-        # Geocode location with retry logic
+        # Geocode location 
         location = None
-        for _ in range(3):  # Retry up to 3 times
+        for _ in range(1):  # Retry up to 1 time
             location = geocode_location(system['location'])
             if location:
                 break
-            time.sleep(1)  # Wait for 1 second before retrying
+            time.sleep(0.1)  # Wait for 1 second before retrying
 
         if location:
             system['latitude'] = location.latitude
