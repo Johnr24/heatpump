@@ -19,7 +19,7 @@ def plot_heatpump_map(systems):
 
     # Add markers for each system
     for system in systems:
-        if 'latitude' in system and 'longitude' in system and 'running_cop' in system['stats']:
+        if 'latitude' in system and 'longitude' in system and system['latitude'] is not None and system['longitude'] is not None and 'running_cop' in system['stats']:
             latitude = system['latitude']
             longitude = system['longitude']
             cop = system['stats']['running_cop']

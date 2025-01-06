@@ -4,7 +4,7 @@ from geopy.exc import GeocoderTimedOut, GeocoderUnavailable
 import time
 
 # Range of system IDs to process
-system_id_range = range(1, 550)
+system_id_range = range(1, 50)
 
 # Initialize geolocator
 geolocator = Nominatim(user_agent="heatpumpmap", timeout=10)
@@ -34,11 +34,7 @@ for system_id in system_id_range:
 
         # Geocode location 
         location = None
-        for _ in range(1):  # Retry up to 1 time
-            location = geocode_location(system['location'])
-            if location:
-                break
-            time.sleep(0.1)  # Wait for 1 second before retrying
+        location = geocode_location(system['location'])
 
         if location:
             system['latitude'] = location.latitude
