@@ -4,7 +4,7 @@ import matplotlib.colors as mcolors
 
 def get_color(cop, min_cop, max_cop):
     norm = mcolors.Normalize(vmin=min_cop, vmax=max_cop)
-    cmap = mcolors.LinearSegmentedColormap.from_list("cop_cmap", ["red", "yellow", "green"])
+    cmap = mcolors.LinearSegmentedColormap.from_list("cop_cmap", ["red", "orange", "green"])
     return mcolors.to_hex(cmap(norm(cop)))
 
 def plot_heatpump_map(systems):
@@ -29,22 +29,53 @@ def plot_heatpump_map(systems):
                 # Get color based on COP value
                 color = get_color(cop, min_cop, max_cop)
                 
-                # Create a custom icon with the COP value
+                # Create a custom icon with the COP value on a black background with 50% transparency
                 icon = folium.DivIcon(
                     icon_size=(150, 36),
                     icon_anchor=(0, 0),
-                    html=f'<div style="font-size: 12pt; color: {color};">{cop:.2f}</div>'
+                    html=f'''
+                    <div class="cop-label" style="font-size: 12pt; color: black; background-color: rgba(0, 0, 0, 0); padding: 2px; display: flex; align-items: center;">
+                        <div style="width: 10px; height: 10px; background-color: {color}; border-radius: 50%; margin-right: 5px;"></div>
+                        <span class="cop-text">{cop:.2f}</span>
+                    </div>
+                    '''
                 )
+                
+                # Create a popup with a clickable link
+                popup_html = f"""
+                <div>
+                    <strong>ID:</strong> <a href="https://heatpumpmonitor.org/system/view?id={system['id']}" target="_blank">{system['id']}</a><br>
+                    <strong>Model:</strong> {system['hp_model']}<br>
+                    <strong>COP:</strong> {cop:.2f}
+                </div>
+                """
                 
                 folium.Marker(
                     location=[latitude, longitude],
                     icon=icon,
-                    popup=f"ID: {system['id']}<br>Model: {system['hp_model']}<br>COP: {cop:.2f}"
+                    popup=folium.Popup(popup_html, max_width=300)
                 ).add_to(heatmap)
             else:
                 print(f"Skipping system ID {system['id']} due to missing COP.")
         else:
             print(f"Geolocation or COP data is missing for system ID {system['id']}.")
+
+    # Add a custom control to toggle text labels
+    toggle_js = """
+    function toggleLabels() {
+        var texts = document.getElementsByClassName('cop-text');
+        for (var i = 0; i < texts.length; i++) {
+            if (texts[i].style.display === 'none') {
+                texts[i].style.display = 'inline';
+            } else {
+                texts[i].style.display = 'none';
+            }
+        }
+    }
+    """
+    toggle_button = folium.Element('<button onclick="toggleLabels()">Toggle Labels</button>')
+    heatmap.get_root().html.add_child(folium.Element(f'<script>{toggle_js}</script>'))
+    heatmap.get_root().html.add_child(toggle_button)
 
     # Save the map to an HTML file
     heatmap.save('heatpump_map.html')
