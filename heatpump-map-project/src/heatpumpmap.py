@@ -44,6 +44,7 @@ def write_cached_locations(csv_file, cached_locations):
 
 # Combine metadata and stats
 systems = []
+failed_systems = []
 cached_locations = read_cached_locations('cached_locations.csv')
 
 for system in meta:
@@ -77,6 +78,8 @@ for system in meta:
                 system['latitude'] = None
                 system['longitude'] = None
                 print(f"Geocoding failed for system ID {system_id}. Setting coordinates to None.")
+                #add system to a list of failed systems
+                failed_systems.append(system_id)
 
         # Add system to the list
         systems.append(system)
@@ -86,6 +89,8 @@ write_cached_locations('cached_locations.csv', cached_locations)
 
 # Convert systems data to DataFrame
 df = pd.json_normalize(systems)
+failed_df = pd.DataFrame(failed_systems, columns=['failed_systems'])
 
 # Save to CSV
 df.to_csv('heatpump_systems.csv', index=False)
+failed_df.to_csv('failed_systems.csv', index=False)
