@@ -1,6 +1,8 @@
 import folium
 from heatpumpmap import systems  # Assuming systems is a list of dictionaries with heat pump data
 import matplotlib.colors as mcolors
+import geojson
+import random
 
 def get_color(cop, min_cop, max_cop):
     norm = mcolors.Normalize(vmin=min_cop, vmax=max_cop)
@@ -17,6 +19,9 @@ def plot_heatpump_map(systems):
     min_cop = min(cop_values)
     max_cop = max(cop_values)
 
+    features = []
+    coord_count = {}  # Dictionary to track the number of pumps at each coordinate
+
     # Add markers for each system
     for system in systems:
         if 'latitude' in system and 'longitude' in system and system['latitude'] is not None and system['longitude'] is not None and 'running_cop' in system['stats']:
@@ -25,6 +30,18 @@ def plot_heatpump_map(systems):
             cop = system['stats']['running_cop']
             if cop is not None:
                 print(f"Latitude: {latitude}, Longitude: {longitude}, COP: {cop}")  # Print the geolocation and COP
+                
+            # Check if the coordinate already exists in the dictionary
+                coord_key = (latitude, longitude)
+                if coord_key in coord_count:
+                    coord_count[coord_key] += 1
+                    # Apply an offset to the coordinates
+                    offset = coord_count[coord_key] * (random.uniform(-0.0003, 0.0003))
+                    print(f"Offsetting coordinates by {offset}")
+                    latitude += offset
+                    longitude += offset
+                else:
+                    coord_count[coord_key] = 1
                 
                 # Get color based on COP value
                 color = get_color(cop, min_cop, max_cop)
@@ -55,6 +72,17 @@ def plot_heatpump_map(systems):
                     icon=icon,
                     popup=folium.Popup(popup_html, max_width=300)
                 ).add_to(heatmap)
+
+                # Add feature to GeoJSON
+                feature = geojson.Feature(
+                    geometry=geojson.Point((longitude, latitude)),
+                    properties={
+                        "id": system['id'],
+                        "model": system['hp_model'],
+                        "cop": cop
+                    }
+                )
+                features.append(feature)
             else:
                 print(f"Skipping system ID {system['id']} due to missing COP.")
         else:
@@ -78,7 +106,7 @@ def plot_heatpump_map(systems):
     heatmap.get_root().html.add_child(toggle_button)
 
     # Save the map to an HTML file
-    heatmap.save('index.html')
+    heatmap.save('heatpump_map.html')
 
-if __name__ == "__main__":
-    plot_heatpump_map(systems)
+# Call the function to plot the heatpump map
+plot_heatpump_map(systems)
