@@ -28,6 +28,7 @@ def plot_heatpump_map(systems):
             latitude = system['latitude']
             longitude = system['longitude']
             cop = system['stats']['running_cop']
+            outdoortemp = system['stats']['running_outsideT_mean']
             if cop is not None:
                 print(f"Latitude: {latitude}, Longitude: {longitude}, COP: {cop}")  # Print the geolocation and COP
                 
@@ -57,13 +58,16 @@ def plot_heatpump_map(systems):
                     </div>
                     '''
                 )
+                # Format outdoortemp as "N/A" if it is None
+                outdoortemp = f"{outdoortemp:.2f}" if outdoortemp is not None else "N/A"
                 
                 # Create a popup with a clickable link
                 popup_html = f"""
                 <div>
                     <strong>ID:</strong> <a href="https://heatpumpmonitor.org/system/view?id={system['id']}" target="_blank">{system['id']}</a><br>
                     <strong>Model:</strong> {system['hp_model']}<br>
-                    <strong>COP:</strong> {cop:.2f}
+                    <strong>COP:</strong> {cop:.2f}<br>
+                    <strong>Outside Temp:</strong> {outdoortemp if outdoortemp == "N/A" else f"{float(outdoortemp):.2f}"}
                 </div>
                 """
                 
