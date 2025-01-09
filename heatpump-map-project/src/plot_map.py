@@ -106,7 +106,7 @@ def plot_heatpump_map(systems):
     heatmap.get_root().html.add_child(toggle_button)
 
     # Save the map to an HTML file
-    heatmap.save('heatpump_map.html')
+    heatmap.save('index.html')
 
 # Call the function to plot the heatpump map
 plot_heatpump_map(systems)
